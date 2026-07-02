@@ -1,23 +1,50 @@
-// Aguarda o carregamento total da página
 document.addEventListener('DOMContentLoaded', () => {
-    // Seleciona todos os cartões de produtos
+    
+    // ------------------------------------
+    // 1. SISTEMA DE ZOOM (+ e -)
+    // ------------------------------------
+    let nivelZoom = 100; // Começa em 100%
+    const corpoPagina = document.body;
+
+    const btnZoomIn = document.getElementById('btn-zoom-in');
+    const btnZoomOut = document.getElementById('btn-zoom-out');
+
+    // Aumentar zoom
+    btnZoomIn.addEventListener('click', () => {
+        if (nivelZoom < 150) { // Limite máximo de zoom (150%)
+            nivelZoom += 10;
+            corpoPagina.style.fontSize = nivelZoom + '%';
+        }
+    });
+
+    // Diminuir zoom
+    btnZoomOut.addEventListener('click', () => {
+        if (nivelZoom > 70) { // Limite mínimo de zoom (70%)
+            nivelZoom -= 10;
+            corpoPagina.style.fontSize = nivelZoom + '%';
+        }
+    });
+
+    // ------------------------------------
+    // 2. INTERATIVIDADE NOS PRODUTOS
+    // ------------------------------------
     const cartoes = document.querySelectorAll('.cartao');
 
     cartoes.forEach(cartao => {
-        // Efeito visual ao passar o mouse (hover dinâmico)
+        // Altera cor da borda ao passar o mouse
         cartao.addEventListener('mouseenter', () => {
-            cartao.style.borderColor = '#ffffff'; // Muda a borda para branco temporariamente
+            cartao.style.borderColor = '#ffffff'; 
             cartao.style.cursor = 'pointer';
         });
 
         cartao.addEventListener('mouseleave', () => {
-            cartao.style.borderColor = '#FFFF2A'; // Volta para o amarelo original
+            cartao.style.borderColor = '#FFFF2A'; 
         });
 
-        // Simulação de compra ao clicar no cartão
+        // Alerta de compra ao clicar
         cartao.addEventListener('click', () => {
-            const nomeProduto = cartao.querySelector('p').innerText;
-            alert(`Você adicionou o ${nomeProduto} ao seu carrinho!`);
+            const nome = cartao.querySelector('.nome-produto').innerText;
+            alert(`🛒 ${nome} foi adicionado ao seu carrinho com sucesso!`);
         });
     });
 });
