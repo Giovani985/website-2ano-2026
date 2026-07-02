@@ -1,0 +1,86 @@
+/* Reset global vindo do seu código original ajustado para as cores novas */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000000;
+    color: #FFFF2A;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Links de navegação */
+a {
+    color: #FFFF2A;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Elementos estruturais */
+.cabecalho {
+    padding: 15px 25px;
+    text-align: center;
+    border-bottom: 2px solid #FFFF2A;
+    margin-bottom: 30px;
+}
+
+main {
+    padding: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3 {
+    border-bottom: 1px solid #FFFF2A;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+/* Grid para alinhar os cartões lado a lado */
+.grade-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+/* Configurações dos cartões vindas do seu código adaptadas */
+.cartao {
+    width: 260px;
+    border: 1px solid #FFFF2A;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    background-color: #000000;
+}
+
+.cartao-imagem {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.preco {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    border-top: 1px solid #FFFF2A;
+    padding-top: 20px;
+}
