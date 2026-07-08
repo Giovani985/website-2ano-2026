@@ -120,8 +120,38 @@ h3 {
     padding-top: 8px;
 }
 
-/* BOTÕES FIXOS DE ZOOM BEM MAIORES */
+/* Botões fixos de zoom no canto inferior direito - Otimizados para Baixa Visão */
 .zoom-controls {
     position: fixed;
-    bottom: 30px; /* Afastado um pouco mais da borda inferior */
-    right: 30px; /* Af
+    bottom: 25px;
+    right: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 1000;
+}
+
+.zoom-controls button {
+    background-color: #FFFF2A;
+    color: #000000;
+    border: 3px solid #FFFF2A;
+    font-size: 32px; /* Letra muito maior e visível */
+    font-weight: bold;
+    width: 65px; /* Botão maior para facilitar o clique */
+    height: 65px; /* Botão maior para facilitar o clique */
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 6px 15px rgba(255, 255, 42, 0.4);
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Efeito ao passar o mouse ou focar no botão */
+.zoom-controls button:hover, 
+.zoom-controls button:focus {
+    background-color: #000000;
+    color: #FFFF2A;
+    outline: none;
+}
