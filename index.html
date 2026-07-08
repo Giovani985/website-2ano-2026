@@ -1,28 +1,31 @@
-<section id="celulares"> 
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+<head> 
+    <meta charset="UTF-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <title>TechShop - Eletrônicos & Componentes</title> 
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body> 
+
+    <div class="zoom-controls">
+        <button id="btn-zoom-in" title="Aumentar Zoom">+</button>
+        <button id="btn-zoom-out" title="Diminuir Zoom">-</button>
+    </div>
+
+    <header class="cabecalho"> 
+        <h1>TechShop</h1> 
+        <nav> 
+            <a href="#celulares">Celulares</a> | 
+            <a href="#pecas">Peças & Fontes</a> | 
+            <a href="#ryzen">Ryzen</a> 
+        </nav> 
+    </header> 
+
+    <main> 
+        <section id="celulares"> 
             <h3>Celulares</h3>
             <div class="grade-produtos">
-                <article class="cartao"> 
-                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500" alt="iPhone 17 Pro" class="cartao-imagem"> 
-                    <p class="nome-produto">iPhone 17 Pro</p> 
-                    <div class="detalhes-produto">
-                        <p><strong>Lançamento:</strong> 2025</p>
-                        <p><strong>Processador:</strong> A19 Pro Chip</p>
-                        <p><strong>Câmera:</strong> Sistema Triplo de 48MP</p>
-                    </div>
-                    <p class="preco">R$ 9.499,00</p>
-                </article> 
-
-                <article class="cartao"> 
-                    <img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=500" alt="Samsung Galaxy S26 Ultra" class="cartao-imagem"> 
-                    <p class="nome-produto">Samsung Galaxy S26 Ultra</p> 
-                    <div class="detalhes-produto">
-                        <p><strong>Lançamento:</strong> 2026</p>
-                        <p><strong>Processador:</strong> Snapdragon 8 Gen 5</p>
-                        <p><strong>Tela:</strong> Dynamic AMOLED 2X 6.8"</p>
-                    </div>
-                    <p class="preco">R$ 8.999,00</p>
-                </article> 
-
                 <article class="cartao"> 
                     <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500" alt="Smartphone Premium X" class="cartao-imagem"> 
                     <p class="nome-produto">Smartphone Premium X</p> 
@@ -45,4 +48,89 @@
                     <p class="preco">R$ 2.899,00</p>
                 </article> 
             </div>
-        </section>
+        </section> 
+
+        <section id="pecas"> 
+            <h3>Peças e Fontes</h3>
+            <div class="grade-produtos">
+                <article class="cartao"> 
+                    <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=500" alt="Fonte ATX" class="cartao-imagem"> 
+                    <p class="nome-produto">Fonte ATX 750W 80 Plus</p> 
+                    <div class="detalhes-produto">
+                        <p><strong>Lançamento:</strong> 2023</p>
+                        <p><strong>Certificação:</strong> Gold Full Modular</p>
+                        <p><strong>Proteção:</strong> OVP / UVP / SCP / OPP</p>
+                    </div>
+                    <p class="preco">R$ 450,00</p>
+                </article> 
+
+                <article class="cartao"> 
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=500" alt="Placa de Vídeo RTX" class="cartao-imagem"> 
+                    <p class="nome-produto">Placa de Vídeo RTX 4060 Ti</p> 
+                    <div class="detalhes-produto">
+                        <p><strong>Lançamento:</strong> 2023</p>
+                        <p><strong>Memória:</strong> 8GB GDDR6X</p>
+                        <p><strong>Tecnologia:</strong> DLSS 3 e Ray Tracing</p>
+                    </div>
+                    <p class="preco">R$ 2.499,00</p>
+                </article> 
+
+                <article class="cartao"> 
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=500" alt="Memória RAM DDR5" class="cartao-imagem"> 
+                    <p class="nome-produto">Memória RAM RGB 16GB DDR5</p> 
+                    <div class="detalhes-produto">
+                        <p><strong>Lançamento:</strong> 2024</p>
+                        <p><strong>Frequência:</strong> 5200MHz</p>
+                        <p><strong>Iluminação:</strong> ARGB Sincronizável</p>
+                    </div>
+                    <p class="preco">R$ 399,00</p>
+                </article> 
+            </div>
+        </section> 
+
+        <section id="ryzen"> 
+            <h3>Processadores Ryzen</h3>
+            <div class="grade-produtos">
+                <article class="cartao"> 
+                    <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?w=500" alt="AMD Ryzen 5" class="cartao-imagem"> 
+                    <p class="nome-produto">AMD Ryzen 5 5600X</p> 
+                    <div class="detalhes-produto">
+                        <p><strong>Lançamento:</strong> 2020</p>
+                        <p><strong>Núcleos:</strong> 6 Cores / 12 Threads</p>
+                        <p><strong>Clock Máx:</strong> Até 4.6GHz</p>
+                    </div>
+                    <p class="preco">R$ 1.200,00</p>
+                </article> 
+
+                <article class="cartao"> 
+                    <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?w=500" alt="AMD Ryzen 7" class="cartao-imagem"> 
+                    <p class="nome-produto">AMD Ryzen 7 7800X3D</p> 
+                    <div class="detalhes-produto">
+                        <p><strong>Lançamento:</strong> 2023</p>
+                        <p><strong>Destaque:</strong> Tecnologia 3D V-Cache</p>
+                        <p><strong>Ideal para:</strong> Performance Extrema em Jogos</p>
+                    </div>
+                    <p class="preco">R$ 2.650,00</p>
+                </article> 
+
+                <article class="cartao"> 
+                    <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?w=500" alt="AMD Ryzen 9" class="cartao-imagem"> 
+                    <p class="nome-produto">AMD Ryzen 9 9950X</p> 
+                    <div class="detalhes-produto">
+                        <p><strong>Lançamento:</strong> 2024</p>
+                        <p><strong>Arquitetura:</strong> Zen 5 (Mais Recente)</p>
+                        <p><strong>Núcleos:</strong> 16 Cores / 32 Threads</p>
+                    </div>
+                    <p class="preco">R$ 4.800,00</p>
+                </article> 
+            </div>
+        </section> 
+    </main> 
+
+    <footer> 
+        <p>Rafael e Giovani</p> 
+    </footer> 
+
+    <script src="script.js" defer></script>
+</body> 
+</html>
